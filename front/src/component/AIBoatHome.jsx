@@ -25,7 +25,7 @@ const AIBoatHome = () => {
 
     try {
       const { data } = await axios.post(
-        "http://localhost:8000/api/gemini/text",
+        "https://personal-brand-assistant-back.onrender.com/api/gemini/text",
         { profession },
         { headers: { "Content-Type": "application/json" } }
       );
